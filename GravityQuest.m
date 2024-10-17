@@ -7,7 +7,7 @@ function GravityQuest()
     % Initialize Game Variables
     spaceshipPos = [400, 300]; % Initial position of the spaceship
     lightCollectibles = generateLightCollectibles(50); % Generate 5 light collectibles
-    blackHoles = generateBlackHoles(3); % Generate 3 black holes
+    blackHoles = generateBlackHoles(30); % Generate 3 black holes
     score = 0; % Initial score
   
     % Main Game Loop
@@ -71,7 +71,7 @@ end
 
 function plotBlackHoles(holes)
     hold on;
-    scatter(holes(:, 1), holes(:, 2), 200, 'black', 'filled'); % Black holes
+    scatter(holes(:, 1), holes(:, 2), 200, 'blue', 'filled'); % Black holes
     hold off;
 end
 
